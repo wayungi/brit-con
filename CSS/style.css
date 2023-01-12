@@ -1,0 +1,1415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------NAV-BAR-SECTION----------------------------------------------- */
+
+.navbar{
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10rem;
+    align-items: center;
+    z-index: 1000000000;
+    position: fixed;
+    width: 100%;
+
+}
+
+.navbar .left-nav .jinno-logo{
+    height: 10rem;
+    width: 19rem;
+    overflow: hidden;
+}
+
+.navbar .left-nav .jinno-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+.navbar .right-nav .nav-links li{
+    display: inline-block;
+}
+
+.navbar .right-nav .nav-links li a{
+    margin-right: 7rem;
+    padding: 4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: white;
+    border-radius: .5rem;
+}
+
+.navbar .right-nav .nav-links li a:hover{
+    color: #009EE3;
+    transition: .9s all;
+}
+
+
+/* ---------------------------------------------------------BANNER-SECTION----------------------------------------------- */
+.banner{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.arrow{
+    background-color: #fff;
+    padding: 3rem 3rem;
+    border-radius: 50%;
+    font-weight: bolder;
+}
+
+.sub-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200000;
+    width: 80%;
+    text-align: center;
+}
+
+.sub-banner .banner-title{
+    font-size: 6rem;
+    font-weight: 700;
+    color: #ccc;
+}
+
+.sub-banner .subscription-par{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 5rem;
+}
+
+.sub-button .main-btn{
+    background-color: rgba(0,158,227, 0.78);
+    padding: 1.5rem 5rem;
+    border: 0;
+    border-radius: .5rem;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.sub-button .main-btn:hover{
+    box-shadow: .5rem .5rem .1rem rgba(0, 0, 0, .5);
+    transform: scale(1.1);
+    transition: .5s;
+    background-color: #198abb;
+}
+
+
+/* ---------------------------------------main------------------------------------------ */
+
+/* ------------------------------blue-section--------------------------- */
+.blue-section{
+    background-color: #009EE3;
+    min-height: 75vh;
+    padding: 8rem 0;
+    position: relative;
+}
+
+
+.blue-section .blue-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue-section .blue-container .container-col{
+    width: 33%;
+}
+
+.blue-section .blue-container .blue-title{
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.blue-section .blue-container .container-col p{
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.4;
+}
+
+
+.blue-section .blue-container .col-container2{
+    width: 58%;
+}
+
+.blue-section .blue-container .col-container2 .blue-para{
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.7;
+}
+
+.blue-image{
+    width: 12rem;
+    height: 12rem;
+    position: absolute;
+}
+
+.blue-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: .3rem solid #fff;
+    border-radius: 50%;
+}
+
+
+.blue-section .blue-container .col-container2 .blue-para .side-blue-para{
+    padding-left: 14rem;
+}
+
+.blue-btn{
+    border: .1rem solid #fff!important;
+    float: right;
+    margin: 1rem 30rem 0 0;
+    position: absolute;
+}
+
+
+/* ----------------------------------------------------------featured-section------------------------------- */
+.featured-section{
+    /* background-color: red; */
+    height: 90%;
+}
+
+.feat-heading-content{
+    text-align: center;
+    /* background-color: green; */
+}
+
+.feat-titles{
+    font-size: 3.5rem;
+    color: #252525;
+    margin: 8rem;
+    position: relative;
+    /* background-color: red; */
+}
+
+.feat-titles::after{
+    content: "";
+    background-color: #009EE3;
+    height: .1rem;
+    width: 10%;
+    position: absolute;
+    display: block;
+    left: 45%;
+    top: 8rem;
+}
+
+.featued-description{
+    /* background-color: blue; */
+    font-size: 1.7rem;
+    color: #818181;
+}
+
+.feat-row-1{
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feat-row-1 .featured-card{
+    position: relative;
+    width: 38rem;
+    height: 24rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.feat-row-1 .featured-card .feat-img-cont{
+    width: 40rem;
+    height: 35rem;
+}
+
+.feat-row-1 .featured-card .feat-img-cont img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feat-card-overlay{
+    background-color: rgba(54, 55, 50, 0.79);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2.5rem;
+    transform: translateY(100%);
+}
+
+.feat-card-overlay .feat-card-overlay-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.feat-card-overlay .feat-card-overlay-para{
+    font-size: 1.7rem;
+    margin-top: .5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #fff;
+}
+
+.feat-row-1 .featured-card:hover .feat-card-overlay{
+    transform: translateY(0%);
+    transition: .5s;
+}
+
+.footer{
+    background-color: #2E2E2E;
+    height: 65vh;
+    margin-top: 7rem;
+}
+
+.footer .sub-footer{
+    /* background-color: aqua; */
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+    padding-top: 8rem;
+    color: white;
+}
+
+.footer .sub-footer .footer-link-title{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.footer .sub-footer .footer-quick-links ul li{
+    display: inline-block;
+    margin-bottom: 4rem;
+    font-size: 1.6rem;
+}
+
+.footer .sub-footer .footer-quick-links ul li a{
+    color: #009EE3;
+    margin: 0 1rem;
+}
+
+.footer .sub-footer .footer-quick-links ul li a:hover{
+    color: #377fa0;
+    transition: .5s;
+}
+
+.footer .sub-footer .footer-icons li{
+    font-size: 3.5rem;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.footer .sub-footer .footer-icons li a{
+    color: #7f7f7f;
+}
+
+.footer .sub-footer .footer-icons li a:hover{
+    color: #009EE3;
+    transition: .5s all;
+}
+
+.footer .sub-footer .footer-last-descri{
+    margin-top: 6rem;
+    color: #c0bcbc;
+    font-size: 1.4rem;
+}
+
+
+/* -----------------------------------------------PLANS-PAGE--------------------------------------------- */
+.plan-section{
+    /* background-color: green; */
+    /* height: 60%; */
+    padding: 4rem 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan-section-card{
+    border: .1rem solid silver;
+    width: 30%;
+    height: 77.3vh;
+    text-align: center;
+}
+
+.plan-section-title{
+    font-size: 2rem;
+}
+
+.line{
+    border-top: .1rem solid silver;
+    padding: 3rem;
+    font-size: 1.7rem;
+    color: #818181;
+}
+
+.plan-section-title{
+    padding: 3rem;
+}
+
+.plan-description-title{
+    padding: 1.6rem 0;
+    background-color: #f8f8f8;
+}
+
+.plan-description-title h3{
+    font-size: 3rem;
+    color: #727272;
+}
+
+.plan-description-title small{
+    font-size: 1.5rem;
+    color: #727272;
+}
+
+.plan-card-footer-button a{
+    padding: 3rem;
+    font-size: 1.8rem;
+    color: #009EE3;
+}
+
+.plan-card-footer-button a:hover{
+    background-color: #009EE3;
+    transition: .9s all;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+}
+
+
+
+/* ------------------------------------------CONTACT-PAGE-------------------------------------- */
+.content section{
+    margin: 5vh;
+}
+
+section i{
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.content-form{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    color: #727272;
+}
+
+.form .contact-form input{
+    width: 50rem;
+    background-color: transparent;
+    border: 0;
+    border: transparent;
+    margin: 1rem;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    border: .2rem solid silver;
+    margin-bottom: 2rem;
+}
+
+.form .contact-form input ~ span{
+    position: absolute;
+    left: 0;
+    transition: .9s ease-in-out;
+    font-size: 1.6rem;
+}
+
+.form .contact-form input:focus ~ span{
+    transform: translateY(-20%);
+    pointer-events: none;
+
+}
+
+
+.form .contact-form textarea{
+    width: 50rem;
+    height: 10rem;
+    background-color: transparent;
+    margin: 2rem;
+    font-size: 1.7rem;
+    border: .2rem solid silver;
+}
+
+
+.form .contact-form textarea ~ span{
+    position: absolute;
+    left: 0px;
+    margin-top: -1rem;
+    transition: .9s ease-in-out;
+    font-size: 1.6rem;
+}
+
+.form .contact-form textarea:focus ~ span{
+    transform: translateY(-20%);
+}
+
+.form .contact-form input[type=submit]{
+    background-color: dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+    font-size: 1.8rem;
+    width: 50%;
+    height: 4rem;
+    margin-top: rem;
+    line-height: 0;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.form .contact-form input[type=submit]:hover{
+    background-color: aqua;
+    color: dodgerblue;
+}
+
+.media{
+    position: absolute;
+    top: 85vh;
+    right: 20vh;
+    display: flex;
+    list-style: none;
+}
+
+.media li{
+    margin: 2rem 3rem;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.media li:hover{
+    color: aqua;
+    transform: scale(1.5);
+}
+
+.icon{
+    font-size: 4rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*Media Query Responsive Design*/
+
+/* --------Landscape-extra-------------- */
+@media(max-width: 1555px){
+    .plan-section-card{
+        border: .1rem solid silver;
+        width: 30%;
+        height: 99vh;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1451px){
+    .feat-row-1 .featured-card{
+        background-color: purple;
+        width: 30%;
+        height: 30%;
+        margin-bottom: 10rem;
+    }
+
+}
+
+
+
+/* Landscape table : <= 1200px */
+@media (max-width: 75em) {
+    html {
+      /* 1rem = 9px */
+      font-size: 56.25%;
+    }
+
+    /* -------------------navbar------------ */
+    .navbar{
+        padding: 0;
+    }
+
+    .navbar .right-nav .nav-links li a{
+        margin-right: 3rem;
+    }
+
+     /* --------------banner---------------------- */
+   .swiper .swiper-slide{
+    width: 100vw;
+    height: 100vh;
+}
+
+    .swiper .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+    .blue-section .blue-container{
+        width: 90%;
+    }
+
+    /* -----------------blue-section---------------- */
+    .blue-section .blue-container .container-col p{
+        font-size: 2.3rem;
+    }
+
+    .blue-section .blue-container .col-container2 .blue-para{
+        font-size: 2.3rem;
+    }
+
+
+    .blue-section .blue-container .container-col p{
+        font-size: 2.3rem;
+    }
+
+    .blue-section .blue-container .col-container2{
+        font-size: 2.3rem;
+        width: 100%;
+        /* background-color: blue; */
+    }
+
+    .blue-section .blue-container .container-col{
+        /* background-color: black; */
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    
+    .blue-section .blue-container{
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        line-height: 3;
+        position: relative;
+    }
+
+
+
+    /* ----------------------------------------------------------featured-section------------------------------- */
+.featured-section{
+    /* background-color: #009EE3; */
+    height: 90%;
+    color: #fff;
+}
+
+.feat-row-1 .featured-card{
+    background-color: purple;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 10rem;
+}
+
+
+/* -----------------------------------------------PLANS-PAGE--------------------------------------------- */
+.plan-section{
+    background-color: green;
+    height: 1105h;
+    padding: 4rem 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan-section-card{
+    border: .1rem solid silver;
+    width: 30%;
+    height: 90vh;
+    text-align: center;
+}
+   
+}
+
+
+
+  
+  /* portrait table  <= 900px */
+  @media (max-width: 56.25em) {
+    html {
+      /* 1rem = 7px */
+      font-size: 43.75%;
+    }
+
+
+    /* -------------------navbar------------------------- */
+    .navbar{
+        padding: 0 4rem;
+        background-color: rgb(255, 0, 0);
+        z-index: 2000000;
+    }
+
+    .icon{
+        display: block;
+    }
+
+    .content-form {
+        font-size: 1.8rem;
+    }
+
+    .navbar .right-nav .nav-links{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        top: 8rem;
+        left: 0;
+        transform: translateX(-100%);
+        text-align: center;
+        padding-top: 17rem;
+        transition: .5s all;
+        margin-top: 2rem;
+    }
+
+    .navbar .right-nav .nav-links li{
+        display: block;
+        margin-bottom: 10rem;
+    }
+
+    .navbar .right-nav .nav-links li a{
+        font-size: 2.7rem;
+    }
+
+    .right-nav ul.nav-links.show{
+    transform: translateX(0%);
+   }
+
+   /* --------------banner---------------------- */
+   .arrow{
+    padding: 4rem 4rem;
+    }
+
+    /* -----------------blue-section---------------- */
+    .blue-section .blue-container{
+        display: flex;
+        flex-direction: column;
+        line-height: 3;
+        position: relative;
+    }
+
+/* -------------------------------featured-section----------------------------- */
+     .feat-row-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feat-row-1 .featured-card{
+        background-color: purple;
+        width: 60%;
+        height: 40%;
+        margin-bottom: 10rem;
+    }
+
+    .feat-row-1 .featured-card .feat-img-cont{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .feat-row-1 .featured-card .feat-img-cont img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
+
+
+    .feat-card-overlay .feat-card-overlay-title{
+        font-size: 5rem;
+    }
+    
+    .feat-card-overlay .feat-card-overlay-para{
+        font-size: 2.5rem;
+    }
+
+    /* -----------------FOOTER-SECTION---------------- */
+    .footer .sub-footer .footer-link-title{
+        font-size: 3rem;
+    }
+
+    .footer .sub-footer .footer-quick-links ul{
+        margin: 4rem 0;
+    }
+    
+    .footer .sub-footer .footer-quick-links ul li a{
+        font-size: 2.5rem;
+    }
+    
+    .footer .sub-footer .footer-icons li{
+        font-size: 4.5rem;
+    }
+
+    .footer .sub-footer .footer-last-descri{
+        font-size: 2rem;
+    }
+
+
+    
+/* -----------------------------------------------PLANS-PAGE--------------------------------------------- */
+.plan-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-section-card{
+    width: 70%;
+    height: 75vh;
+    margin-bottom: 9rem;
+    color: white;
+    /* background-color: #009EE3; */
+}
+
+    .line:not(:last-child){
+        color: #fff;
+        font-size: 3rem;
+    }
+
+  }
+  
+
+
+  /* ------Phone-extra----------- */
+  @media (max-width: 871px){
+    .feat-card-overlay .feat-card-overlay-title{
+        font-size: 3rem;
+    }
+    
+    .feat-card-overlay .feat-card-overlay-para{
+        font-size: 2rem;
+    }
+  }
+
+  /* Telephone  <= 600px */
+  @media (max-width: 37.5em) {
+    html {
+      /* 1rem = 5px */
+      font-size: 31.25%;
+    }
+
+
+    /* --------------------banner------------------- */
+    .arrow{
+        padding: 6rem 6rem;
+    }
+
+    .sub-banner .banner-title{
+        font-size: 8rem;
+    }
+
+    .sub-banner .subscription-par{
+        font-size: 4rem;
+    }
+
+    .content-form {
+        font-size: 1.7rem;
+    }
+
+       /* -----------------blue-section---------------- */
+       .blue-section .blue-container .container-col p{
+        font-size: 3rem;
+    }
+
+    .blue-para p{
+        font-size: 3rem;
+    }
+
+    /* -----------------------featured-section-------------------- */
+
+    .feat-row-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feat-row-1 .featured-card{
+        width: 100%;
+        height: 40%;
+        margin-bottom: 10rem;
+    }
+
+    .feat-row-1 .featured-card .feat-img-cont{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .feat-row-1 .featured-card .feat-img-cont img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } 
+
+
+    .feat-card-overlay .feat-card-overlay-title{
+        font-size: 6rem;
+    }
+    
+    .feat-card-overlay .feat-card-overlay-para{
+        font-size: 2.3rem;
+    }
+  
+
+        /* -----------------FOOTER-SECTION---------------- */
+        .footer {
+            height: 80vh;
+        }
+
+        .footer .sub-footer .footer-link-title{
+            font-size: 4rem;
+        }
+        
+        .footer .sub-footer .footer-quick-links ul li a{
+            font-size: 3.5rem;
+        }
+        
+        .footer .sub-footer .footer-icons li{
+            font-size: 5rem;
+        }
+    
+        .footer .sub-footer .footer-last-descri{
+            font-size: 3rem;
+        }
+
+            
+/* -----------------------------------------------PLANS-PAGE--------------------------------------------- */
+.plan-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+}
+
+.plan-section-card{
+    width: 100%;
+    height: 54vh;
+    margin-bottom: 9rem;
+    color: white;
+    border-radius: .5rem;
+}
+
+    .line:not(:last-child){
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .featued-description{
+        font-size: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .content section{
+        margin-left: 5vh;
+    }
+  }
+
+  .charges {
+    color: rgb(10, 8, 8);
+    font-size: 1.7rem;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
